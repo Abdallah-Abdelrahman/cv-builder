@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>John Doe - CV</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="cv-container">
+    <!-- Language Toggle Button -->
+    <div class="language-toggle">
+      <button onclick="switchLanguage('en')">English</button>
+      <button onclick="switchLanguage('ar')">العربية</button>
+    </div>
+
+    <!-- Header Section -->
+    <header class="cv-header">
+      <h1 data-en='Abdelhakeem Alaeser' data-ar='عبد الحكيم اﻷعيسر'>Abdelhakeem Alaeser</h1>
+      <p class="subtitle" data-en="Software Engineer" data-ar="مهندس برمجيات">Software Engineer</p>
+      <div class="contact-info">
+        <p data-en="Email: john.doe@example.com | Phone: +123 456 7890" data-ar="البريد الإلكتروني: john.doe@example.com | الهاتف: +123 456 7890">Email: john.doe@example.com | Phone: +123 456 7890</p>
+        <p data-en="LinkedIn: linkedin.com/in/johndoe | GitHub: github.com/johndoe" data-ar="لينكدإن: linkedin.com/in/johndoe | جيت هاب: github.com/johndoe">LinkedIn: linkedin.com/in/johndoe | GitHub: github.com/johndoe</p>
+        <p data-en="Location: New York, USA" data-ar="الموقع: نيويورك، الولايات المتحدة">Location: New York, USA</p>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="cv-main">
+      <!-- Professional Summary -->
+      <section class="section">
+        <h2 data-en="Professional Summary" data-ar="ملخص احترافي">Professional Summary</h2>
+        <p data-en="Results-driven Software Engineer with 5+ years of experience in designing and developing scalable web applications. Proficient in Python, JavaScript, and cloud technologies. Passionate about solving complex problems and delivering high-quality software solutions." 
+           data-ar="مهندس برمجيات محترف يتمتع بخبرة تزيد عن 5 سنوات في تصميم وتطوير تطبيقات الويب القابلة للتطوير. متخصص في بايثون، جافا سكريبت، وتقنيات الحوسبة السحابية. شغوف بحل المشكلات المعقدة وتقديم حلول برمجية عالية الجودة.">
+          Results-driven Software Engineer with 5+ years of experience in designing and developing scalable web applications. Proficient in Python, JavaScript, and cloud technologies. Passionate about solving complex problems and delivering high-quality software solutions.
+        </p>
+      </section>
+
+      <!-- Work Experience -->
+      <section class="section">
+        <h2 data-en="Work Experience" data-ar="الخبرة العملية">Work Experience</h2>
+        <div class="experience">
+          <h3 data-en="Senior Software Engineer" data-ar="مهندس برمجيات أول">Senior Software Engineer</h3>
+          <p class="company" data-en="Tech Solutions Inc. | Jan 2020 – Present" data-ar="حلول التقنية | يناير 2020 – حتى الآن">Tech Solutions Inc. | Jan 2020 – Present</p>
+          <ul>
+            <li data-en="Led a team of 5 developers to build a cloud-based SaaS platform, increasing client retention by 25%." 
+                data-ar="قاد فريقًا مكونًا من 5 مطورين لبناء منصة SaaS سحابية، مما أدى إلى زيادة احتفاظ العملاء بنسبة 25٪.">
+              Led a team of 5 developers to build a cloud-based SaaS platform, increasing client retention by 25%.
+            </li>
+            <li data-en="Designed and implemented RESTful APIs using Python and Flask, reducing response times by 30%." 
+                data-ar="صمم ونفذ واجهات برمجة تطبيقات RESTful باستخدام بايثون وFlask، مما أدى إلى تقليل أوقات الاستجابة بنسبة 30٪.">
+              Designed and implemented RESTful APIs using Python and Flask, reducing response times by 30%.
+            </li>
+            <li data-en="Mentored junior developers and conducted code reviews to ensure best practices." 
+                data-ar="قام بتوجيه المطورين المبتدئين وإجراء مراجعات الكود لضمان اتباع أفضل الممارسات.">
+              Mentored junior developers and conducted code reviews to ensure best practices.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section class="section">
+        <h2 data-en="Education" data-ar="التعليم">Education</h2>
+        <div class="education">
+          <h3 data-en="Bachelor of Science in Computer Science" data-ar="بكالوريوس علوم الحاسوب">Bachelor of Science in Computer Science</h3>
+          <p class="institution" data-en="University of New York | Graduated May 2017" data-ar="جامعة نيويورك | تخرج مايو 2017">University of New York | Graduated May 2017</p>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section">
+        <h2 data-en="Skills" data-ar="المهارات">Skills</h2>
+        <ul class="skills">
+          <li data-en="Programming Languages: Python, JavaScript, Java" data-ar="لغات البرمجة: بايثون، جافا سكريبت، جافا">Programming Languages: Python, JavaScript, Java</li>
+          <li data-en="Frameworks: Flask, React.js, Django" data-ar="أطر العمل: Flask، React.js، Django">Frameworks: Flask, React.js, Django</li>
+          <li data-en="Tools: Git, Docker, AWS" data-ar="الأدوات: Git، Docker، AWS">Tools: Git, Docker, AWS</li>
+        </ul>
+      </section>
+
+      <!-- Certifications -->
+      <section class="section">
+        <h2 data-en="Certifications" data-ar="الشهادات">Certifications</h2>
+        <ul class="certifications">
+          <li data-en="AWS Certified Solutions Architect – Associate" data-ar="شهادة AWS Solutions Architect – Associate">AWS Certified Solutions Architect – Associate</li>
+          <li data-en="Certified Python Developer" data-ar="مطور بايثون معتمد">Certified Python Developer</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    function switchLanguage(lang) {
+      document.documentElement.lang = lang;
+      document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+
+      // Update all elements with data-en and data-ar attributes
+      document.querySelectorAll('[data-en], [data-ar]').forEach(element => {
+        element.textContent = element.getAttribute(`data-${lang}`);
+      });
+    }
+  </script>
+</body>
+</html>

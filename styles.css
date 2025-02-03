@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'IBM Plex Sans Arabic';
+    src: url(fonts/IBMPlexSansArabic-Regular.ttf) format('truetype');
+}
+
+/* General Reset */
+body {
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* CV Container */
+.cv-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Language Toggle */
+.language-toggle {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.language-toggle button {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+/* RTL Support */
+[dir="rtl"] .section h2,
+[dir="rtl"] .experience h3,
+[dir="rtl"] .education h3 {
+  text-align: right;
+}
+
+[dir="rtl"] ul {
+  padding-right: 20px;
+}
+
+/* Header Section */
+.cv-header {
+  text-align: center;
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.cv-header h1 {
+  font-size: 2.5em;
+  margin: 0;
+  color: #333;
+}
+
+.cv-header .subtitle {
+  font-size: 1.2em;
+  color: #555;
+  margin: 5px 0;
+}
+
+.contact-info {
+  font-size: 0.9em;
+  color: #777;
+  margin-top: 10px;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+/* Main Content */
+.cv-main {
+  padding: 10px;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.section h2 {
+  font-size: 1.5em;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.experience h3, .education h3 {
+  font-size: 1.2em;
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.company, .institution {
+  font-size: 0.9em;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+.skills, .certifications {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.skills li, .certifications li {
+  margin-bottom: 5px;
+}
